@@ -1,1 +1,40 @@
-hi, test
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora de Alvos</title>
+    <link rel="icon" type="image/x-icon" href="/assets/fav.png">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+    <div class="image">
+        <img src="/assets/trading.gif" width="300" height="300">
+    </div>
+
+    <div class="texting">
+        <h1 class="title">Calculadora de alvos</h1>
+        <p class="text">Ferramenta para traders e investidores.</p>
+        <p class="text">Usando essa calculadora, podemos calcular de maneira</p>
+        <p class="text">automática os alvos das operações de acordo com o risco X retorno.</p>
+    </div>
+
+    <div class="insert">
+    <form id="investmentForm">
+        <input class="insert_op" type="number" id="entryPrice" step="any" placeholder="Preço de entrada" required>
+        <input class="insert_op" type="number" id="stopLoss" step="any" placeholder="Preço de stop loss" required>
+
+        <div class="button_op">
+        <button type="button" onclick="calculateTargets()">Calcular</button>
+        <button class="button_reset" type="button" onclick="resetForm()">Resetar</button>
+        </div>
+    </form>
+    </div>
+
+    <div class="result" id="results"></div>
+    
+</body>
+</html>
