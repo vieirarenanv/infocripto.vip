@@ -10,6 +10,12 @@
     padding: 0;
 }
 
+.text {
+    font-family: var(--fonte-texto);
+    color: var(--cor-1);
+    font-size: 18px;
+}
+
 body {
     font-family: var(--fonte-texto);
     color: var(--cor-1);
@@ -18,6 +24,104 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.bonus-container {
+    color: white;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #8e44ad;
+    position: relative;
+    text-align: center;
+}
+
+.bonus-container h2 {
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.bonus-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.bonus-container ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-texto);
+    font-size: 24px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #732d91;
+}
+
+.video-box {
+    margin: 40px;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.telegram-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0088cc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.telegram-icon:hover {
+    transform: scale(1.1);
+}
+
+.telegram-icon img {
+    width: 60px;
+    height: 60px;
 }
 
 @media (max-width: 1200px) {
