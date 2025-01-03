@@ -34,28 +34,25 @@ body {
 
 .bonus-container {
     color: white;
-    width: 600px;
-    padding: 20px;
+    width: 700px;
     border-radius: 20px;
-    box-shadow: 0 8px 20px #8e44ad;
+    box-shadow: 0 8px 600px #8e44ad;
     position: relative;
     text-align: center;
 }
 
-.bonus-container h2 {
+.bonus-container h3 {
     background-color: #8e44ad;
-    color: white;
     padding: 10px 0;
-    margin: 0;
-    border-radius: 5px 5px 0 0;
-    font-size: 18px;
-    text-transform: uppercase;
+    border-radius: 10px;
+    font-family: var(--fonte-texto);
+    font-size: 24px;
+    font-weight: 800;
 }
 
 .bonus-container ul {
     list-style-type: none;
-    padding: 0;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 20px;
 }
 
 .bonus-container ul li {
@@ -64,28 +61,30 @@ body {
     align-items: center;
     font-family: var(--fonte-texto);
     font-size: 24px;
+    font-weight: 600;
 }
 
-.buttons {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
+.button-container {
+    padding: 20px;
 }
 
-.buttons button {
+.button-container button {
     background-color: #8e44ad;
     color: white;
     border: none;
     padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: var(--fonte-texto);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.buttons button:hover {
+.button-container button:hover {
     background-color: #732d91;
+    transform: scale(1.1);
 }
+
 
 .video-box {
     margin: 40px;
@@ -120,8 +119,8 @@ body {
 }
 
 .telegram-icon img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 
 @media (max-width: 1200px) {
